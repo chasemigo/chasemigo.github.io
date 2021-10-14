@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>      
+    <title> Demonstrating some positioning
+    </title>
+<style>
+    #container {
+        width: 800px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: grey;
+        position: relative;
+    }
+    #red {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(192, 9, 9);
+        z-index: 10;
+    }
+    #white {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        width: 200px;
+        height: 75px;
+        background-color: rgb(248, 248, 248);
+        z-index: 0;
+    }
+    #purple { 
+        position: absolute;
+        top: 50px;
+        left: 125px;
+        width: 150px;
+        height: 50px;
+        background-color: rgb(87, 5, 83);
+        z-index: 20;
+    }
+
+    #bluecircle {
+            height: 200px;
+            width: 200px;
+            background-color: royalblue;
+            border-radius: 50%;
+            bottom: 0px;
+            left: 50%;
+            position: absolute;
+    }
+
+    #trap {
+        border-bottom: 50px solid rgb(70, 142, 160);
+        border-left: 100px solid transparent;    
+        border-right: 100px solid transparent;   
+        height: 0px;
+        width: 125px;
+        z-index: 100px;
+        top: 25%;
+        left: 50%;
+        position: absolute;
+    }
+    #para{
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        background-color: yellow;
+        top: 150px;
+        left: 33%;
+        z-index: 110px;
+        transform: skew(25deg);
+
+    }
+
+</style>
+
+</head>
+
+<body style="background-color: rgb(182, 182, 182);"> 
+<div id="container">
+<div id="red"> </div>
+<div id="white"> </div>
+<div id="purple"> </div>
+<div id="bluecircle"> </div>
+<div id="trap"> </div>
+<div id="para"> </div>
+
+<p style="color: rgba(136, 9, 9, 0.527);"> 
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+Minus sit accusantium assumenda inventore, rem quidem. Asperiores distinctio eum velit id. 
+Earum in fugit veritatis. Ex tempore consectetur voluptas animi ad? Lorem ipsum dolor, 
+sit amet consectetur adipisicing elit. Aliquam incidunt expedita ipsum eligendi quod hic aliquid dicta. 
+Accusamus fugit a quis, veniam eligendi, 
+consequatur provident aperiam, at dolore adipisci ea? Lorem ipsum 
+dolor sit amet consectetur adipisicing elit. Voluptatum beatae labore voluptates. 
+Quo temporibus ea rem blanditiis! Ipsa commodi assumenda id excepturi veritatis neque expedita, 
+alias ad non recusandae molestiae?
+</p>
+
+</div>
+</body>
+</html>
